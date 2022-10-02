@@ -1,0 +1,150 @@
+﻿<Window x:Class="WpfApp_Controls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_Controls"
+        xmlns:wpfTool="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="MainWindow" FontSize="15" Height="450" Width="400">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <DockPanel>
+            <Button x:Name="ItenAddButton" Click="ItenAddButton_Click" Width="50" DockPanel.Dock="Right">Add</Button>
+            <TextBox x:Name="ItemTextBox"></TextBox>
+        </DockPanel>
+        <ComboBox DisplayMemberPath="Name" Grid.Row="1" x:Name="comboBox" SelectedIndex="0">
+            
+        </ComboBox>
+        <ListBox DisplayMemberPath="Phone" Grid.Row="2" x:Name="ListBox">
+            
+        </ListBox>
+        <wpfTool:ColorPicker Grid.Row="3"></wpfTool:ColorPicker>
+        <!--<wpfTool:Calculator Grid.Row="3">
+            
+        </wpfTool:Calculator>-->
+        
+        <!--<ComboBox SelectedIndex="0">
+            --><!--<ComboBoxItem Selector.IsSelected="True">One</ComboBoxItem>--><!--
+            <ComboBoxItem>Two</ComboBoxItem>
+            <ComboBoxItem>
+                <Button>Click me</Button>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                --><!--<Image Height="100" Source="Images/TestImage.jpg"/>--><!--
+                <DockPanel>
+                    <TextBlock>Photo</TextBlock>
+                    <Image Height="100" Source="Images/TestImage.jpg"/>
+                </DockPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <TextBox></TextBox>
+            </ComboBoxItem>
+        </ComboBox>
+        <ListBox Grid.Row="1">
+            <ListBoxItem>
+                Text
+            </ListBoxItem>
+            <ListBoxItem>
+                <Image Height="100" Source="Images/TestImage.jpg"/>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Button>Ok</Button>
+            </ListBoxItem>
+        </ListBox>-->
+    </Grid>
+    
+    <!--<Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button>1</Button>
+        <GridSplitter HorizontalAlignment="Center" Width="5" Grid.Column="1"/>
+        <Button Grid.Column="2">2</Button>
+    </Grid>-->
+
+    <!--<StackPanel>
+        <TextBox x:Name="texBoxText">Hello</TextBox>
+        <Button Click="Button_Click">Click</Button>
+
+        <TextBlock Foreground="Aqua" TextWrapping="WrapWithOverflow" x:Name="textBlockResult">
+        --><!--<Hyperlink NavigateUri="https://yuotube.com">Youtube</Hyperlink>--><!--
+        </TextBlock>
+        <CheckBox IsChecked="True">One</CheckBox>
+        <CheckBox>Two</CheckBox>
+        <CheckBox IsChecked="{x:Null}">Three</CheckBox>
+
+        --><!--<GroupBox>
+            <GroupBox.Header>Gender</GroupBox.Header>
+            <StackPanel>
+                <RadioButton GroupName="First">One</RadioButton>
+                <RadioButton GroupName="First">Two</RadioButton>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox>
+            <GroupBox.Header>Time</GroupBox.Header>
+            <StackPanel>
+                <RadioButton GroupName="Second">Three</RadioButton>
+                <RadioButton GroupName="Second">Four</RadioButton>
+            </StackPanel>
+        </GroupBox>--><!--
+
+        <ProgressBar Height="20" Value="30" Minimum="0" Maximum="100"></ProgressBar>
+
+        <Slider Maximum="20" Minimum="0" Value="10"></Slider>
+        --><!--<ScrollViewer   VerticalScrollBarVisibility="Visible">
+        <StackPanel>
+            <TextBox >Hello</TextBox>
+            <Button >Click</Button>
+            <CheckBox IsChecked="True">One</CheckBox>
+            <CheckBox>Two</CheckBox>
+            <CheckBox IsChecked="{x:Null}">Three</CheckBox>
+            
+        <GroupBox>
+            <GroupBox.Header>Gender</GroupBox.Header>
+            <StackPanel>
+                <RadioButton  GroupName="First">One</RadioButton>
+                <RadioButton  GroupName="First">Two</RadioButton>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox>
+            <GroupBox.Header>Time</GroupBox.Header>
+            <StackPanel>
+                <RadioButton GroupName="Second">Three</RadioButton>
+                <RadioButton GroupName="Second">Four</RadioButton>
+            </StackPanel>
+        </GroupBox>
+
+        <ProgressBar Height="20" Value="30" Minimum="0" Maximum="100"></ProgressBar>
+        <Slider Maximum="20" Minimum="0" Value="10"></Slider>
+        
+            
+            <TextBlock TextWrapping="Wrap">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget urna gravida, placerat nulla vel, aliquet justo. Vivamus sed pretium eros, sit amet bibendum lectus. Donec interdum luctus massa ut consequat. Proin convallis massa in tellus elementum, in rutrum nibh semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis volutpat laoreet. Nulla consectetur nulla a lacus feugiat volutpat.
+Ut porta ex eu porttitor mollis. Nunc rhoncus a nulla in malesuada. Nullam non pharetra orci. Aliquam nec sodales ex. Aliquam vulputate orci at urna bibendum, vehicula posuere massa scelerisque. Curabitur ultricies augue aliquam turpis aliquam, non ultrices nulla mattis. Nulla nec nibh eu mauris convallis tincidunt a et metus. Mauris sollicitudin et eros eu facilisis. In accumsan ex ex, ut fringilla risus tincidunt sed.
+Sed et ipsum metus. Aliquam mollis eleifend felis et maximus. Donec ornare metus ut nunc condimentum malesuada. Nulla ut massa ullamcorper, tristique mi ac, porta sapien. Praesent non faucibus arcu, ac vulputate purus. Sed ligula augue, ullamcorper at ullamcorper non, viverra et massa. Donec sodales nunc id malesuada sagittis. Cras vulputate, magna quis fringilla interdum, elit arcu lobortis erat, rhoncus mollis enim eros eget felis. In vulputate erat enim, sit amet posuere dui finibus a. Pellentesque ornare nec erat pellentesque imperdiet. Suspendisse potenti. Aenean elementum et elit a auctor. Sed vel ante vulputate, tristique lectus id, condimentum tellus. Etiam vulputate finibus consectetur. Fusce at cursus urna.
+            </TextBlock>
+        </StackPanel>
+    </ScrollViewer>-->
+
+        <!--<LineBreak/>
+        <Run Foreground="Red" Text="   Ut porta ex eu porttitor mollis. Nunc rhoncus a nulla in malesuada. Nullam non pharetra orci. Aliquam nec sodales ex. Aliquam vulputate orci at urna bibendum,"/>
+        <LineBreak/> posuere massa scelerisque. Curabitur ultricies augue aliquam turpis aliquam, non ultrices nulla mattis. Nulla nec nibh eu mauris convallis tincidunt a et metus. Mauris sollicitudin et eros eu facilisis. In accumsan ex ex, ut fringilla risus tincidunt sed.
+Sed et ipsum metus. Aliquam mollis eleifend felis et maximus. Donec ornare metus ut nunc condimentum malesuada. Nulla ut massa ullamcorper, tristique mi ac,
+        </TextBlock>
+
+        <Label>Enter your passwor</Label>
+        <PasswordBox ></PasswordBox>--><!--
+
+
+    </StackPanel>--> 
+</Window>
