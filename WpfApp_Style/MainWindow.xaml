@@ -73,7 +73,7 @@
     <Window.Resources>
         <ResourceDictionary Source="DictionaryStyle.xaml"/>
     </Window.Resources>
-    <Grid>
+    <!--<Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -85,6 +85,28 @@
         <TextBlock Style="{StaticResource StyledTextBlock}" Foreground="{StaticResource MainColor}"   Grid.Row="1">Two</TextBlock>
 
         <TextBlock Style="{StaticResource StyledTextBlock}" Background="Red"   Grid.Row="2">Three</TextBlock>
-    </Grid>
+        
+    </Grid>-->
+
+    <ListBox>
+        <ListBoxItem>
+            <StackPanel Width="350" Orientation="Horizontal">
+                <Image Height="60" Source="TestImage.jpg"></Image>
+                <TextBlock Margin="40px" VerticalAlignment="Center">Hello</TextBlock>
+            </StackPanel>
+        </ListBoxItem>
+        <ListBoxItem>
+            <StackPanel Width="350" Orientation="Horizontal">
+                <Image Height="60" Source="TestImage.jpg"></Image>
+                <TextBlock Margin="40px" VerticalAlignment="Center">Hello</TextBlock>
+            </StackPanel>
+        </ListBoxItem>
+        <ListBoxItem>
+            <StackPanel Width="350" Orientation="Horizontal">
+                <Image Height="60" Source="TestImage.jpg"></Image>
+                <TextBlock Margin="40px" VerticalAlignment="Center">Hello</TextBlock>
+            </StackPanel>
+        </ListBoxItem>
+    </ListBox>
     
 </Window>
